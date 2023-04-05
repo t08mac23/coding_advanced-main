@@ -13,6 +13,7 @@
   display: flex;
 }
 
+
 /* .swiper */
 .swiper--wrapper {
   /* wrapperのサイズを調整 */
@@ -42,4 +43,9 @@
 .swiper-slide:nth-child(3n + 3) {
   /*3、6、9、3n+3枚目の背景色 */
   background-color: #53c638;
+}
+
+.images {
+  width: 50vw;
+  height: 75vh;
 }
