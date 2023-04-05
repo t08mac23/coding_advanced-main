@@ -4,35 +4,57 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
- 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css読み込み -->
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <title>Casteria</title>
   </head>
 
   <body>
-    <header>
-      <div class="hedder">
-        <ul class="hedder-left">
-          <li class="hl-casteria">Casteria</li>
-        </ul>
-        <ul class="hedder-right">
-          <li class="hr-home">Home</li>
-          <li class="hr-food">Food</li>
-          <li class="hr-drink">Drink</li>
-          <li class="hr-inquire">お問い合せ</li>
-          <li class="hr-search">Search</li>
-          <button class="hr-search-btn">Search</button>
-        </ul>
+  <!-- ここにメインの処理を書く -->
+    <header class="top-header">
+      <div class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-xs-5 border" id="casteria">Casteria</div>
+            <div class="col-md-1 col-xs-1 border">Home</div>
+            <div class="col-md-1 col-xs-1 border">Food</div>
+            <div class="col-md-1 col-xs-1 border">Drink</div>
+            <div class="col-md-1 col-xs-1 border">お問合せ</div>
+            <div class="col-md-2 col-xs-1 border">
+              <form class="search-form">
+                <input class='input-box1' placeholder='Search'>
+                <button class="search-btn">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
-    <!-- ここにメインの処理を書く -->
+    <!-- スライダーのコンテナ -->
+    <div class="swiper">
+      <!-- 必要に応じたwrapper -->
+      <div class="swiper-wrapper">
+      <!-- スライド -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+      </div>
+    </div>
+ 
  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </body>
 </html>
