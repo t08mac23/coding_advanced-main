@@ -18,15 +18,7 @@ const swiper = new Swiper(".swiper", {
   // スクロールバー
 });
 
+// メイン
 $(function () {
-  $('.detail').hide();
-  $('.info').on('click', function () {
-    // クリックした要素の ID と違うクラス名のセクションを非表示
-      $('.detail').not($('.'+$(this).attr('id'))).hide();
-      // $('detail').animate(
-        // $('detail').fadeIn(),
-        // クリックした要素の ID と同じクラスのセクションを表示
-        $('.'+$(this).attr('id')).toggle()
-      // );
-  });
+  $('#body').fadeIn(3000)
 });

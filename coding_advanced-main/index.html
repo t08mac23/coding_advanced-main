@@ -21,16 +21,16 @@
   <!-- ここにメインの処理を書く -->
     <header class="header">
       <div class="container">
-        <div class="row">
-          <div class="col-md-5 col-sm-5 border" id="casteria">Casteria</div>
-          <div class="col-md-1 col-sm-1 border">Home</div>
-          <div class="col-md-1 col-sm-1 border">Food</div>
-          <div class="col-md-1 col-sm-1 border">Drink</div>
-          <div class="col-md-1 col-sm-1 border">お問合せ</div>
-          <div class="col-md-2 col-sm-1 border">
+        <div class="row header-row">
+          <div class="col-md-5 col-sm-5 casteria">Casteria</div>
+          <div class="col-md-1 col-sm-1">Home</div>
+          <div class="col-md-1 col-sm-1">Food</div>
+          <div class="col-md-1 col-sm-1">Drink</div>
+          <div class="col-md-1 col-sm-1">お問合せ</div>
+          <div class="col-md-2 col-sm-1">
             <form class="search-form">
-              <input class='input-box1' placeholder='Search'>
-              <button class="search-btn">Search</button>
+              <input class='border rounded' placeholder='Search'>
+              <button class="border rounded">Search</button>
             </form>
           </div>
         </div>
@@ -69,29 +69,62 @@
     <!-- メイン -->
     <div class="body">
       <div class="top">
-        <div class="latrst-info">新型コロナウイルスに対する取り組みの最新情報をご案内
-          <div class="info" id="sanitary">■衛生面に関して</div>
-          <p class="sanitary detail">・マスクを着用して接客</p>
-          <p class="sanitary detail">・出勤前の検温の徹底</p>
-          <div class="info" id="corporation">■お客様へのご協力のお願い</div>
-          <p class="corporation detail">・店内では、飲食時以外のマスク着用をお願い致します</p>
-          <p class="corporation detail">・入店時の手指の消毒にご協力ください</p>
-          <p class="corporation detail">・レジに並ぶ際、目安を示すフロアステッカーに沿った列間隔の確保にご協力ください</p>
-          <p class="corporation detail">・多数でお越しの際は、お一人がまとめてご注文願います (混雑時に入場制限をする場合がございます)</p>
-          <p class="corporation detail">・発熱や体調不良の際にはご入店をお控えください</p>
-          <div class="info" id="service">■サービスに関して</div>
-          <p class="service detail">・直接お渡しする商品の提供、金銭授受時にグローブの着用</p>
-          <p class="service detail">・ドリンクやフードのサンプリング中止</p>
-          <p class="service detail">・地域活動・イベントの中止</p>
-          <p class="service detail">・混雑時間帯の客席の譲り合いへのご協力お願いの実施</p>
-          <p class="service detail">・店内に設置しているミルク、はちみつ、パウダー類の一時引き下げ</p>
-          <p class="service detail">・混雑状況に応じたドライブスルーサービスの一時休止や店内客席利用の制限</p>
+        <div class="info">新型コロナウイルスに対する取り組みの最新情報をご案内
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button information" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ■衛生面に関して
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>・マスクを着用して接客</p>
+                  <p>・出勤前の検温の徹底</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed information" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ■お客様へのご協力のお願い
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>・店内では、飲食時以外のマスク着用をお願い致します</p>
+                  <p>・入店時の手指の消毒にご協力ください</p>
+                  <p>・レジに並ぶ際、目安を示すフロアステッカーに沿った列間隔の確保にご協力ください</p>
+                  <p>・多数でお越しの際は、お一人がまとめてご注文願います (混雑時に入場制限をする場合がございます)</p>
+                  <p>・発熱や体調不良の際にはご入店をお控えください</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed information" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ■サービスに関して
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>・直接お渡しする商品の提供、金銭授受時にグローブの着用</p>
+                  <p>・ドリンクやフードのサンプリング中止</p>
+                  <p>・地域活動・イベントの中止</p>
+                  <p>・混雑時間帯の客席の譲り合いへのご協力お願いの実施</p>
+                  <p>・店内に設置しているミルク、はちみつ、パウダー類の一時引き下げ</p>
+                  <p>・混雑状況に応じたドライブスルーサービスの一時休止や店内客席利用の制限</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
       <div class="middle">
         <div class="container">
-          <div class="row signature">
-            <h1>Signature Food</h1>
+          <div class="row" id="body">
+            <h1 class="signature">Signature Food</h1>
             <div class="col-md-6">
               <img src="../coding_advanced-main/img/food.jpg" alt="img" class="img-fluied picture">
             </div>
@@ -103,8 +136,8 @@
           </div>
         </div>
         <div class="container">
-          <div class="row signature">
-            <h1>Our Coffee</h1>
+          <div class="row" id="body">
+            <h1 class="signature">Our Coffee</h1>
             <div class="col-md-6">
               <img src="../coding_advanced-main/img/barista.jpg" alt="img" class="img-fluied picture">
             </div>
@@ -116,8 +149,8 @@
           </div>
         </div>
         <div class="container">
-          <div class="row signature">
-            <h1>Our Food</h1>
+          <div class="row" id="body">
+            <h1 class="signature">Our Food</h1>
             <div class="col-md-6">
               <img src="../coding_advanced-main/img/food3.jpg" alt="img" class="img-fluied picture">
             </div>
@@ -131,21 +164,22 @@
       </div>
       <div class="bottom">
         <div class="container">
-          <div class="row row-back">
+          <div class="row row-back" id="body">
             <div class="col-md-6 intro intro-color">
-              <p><h1 class="signature">Address</h1>688 xxx Drive, xxxx xxx #01 - 06 000000 Opening Hours
-              <h1 class="signature">Mondays - Friday: 10am - 9pm</h1>Saturday, Sunday & Public Holidays: 9am- 9pm</p>
+              <p><h1 class="time-place">Address</h1>688 xxx Drive, xxxx xxx #01 - 06 000000 Opening Hours
+              <h1 class="time-place">Mondays - Friday: 10am - 9pm</h1>Saturday, Sunday & Public Holidays: 9am- 9pm
+              </p>
             </div>
             <div class="col-md-6">
               <img src="../coding_advanced-main/img/barista.jpg" alt="img" class="img-fluied picture">
             </div>
           </div>
         </div>
-        <div class="restaurants">
+        <div class="restaurants" id="body">
           <h1>店舗一覧</h1>
         </div>
         <div class="container container-m">
-          <div class="row">
+          <div class="row" id="body">
             <div class="col-md-3 img-hidden">
               <img src="../coding_advanced-main/img/restaurant2.jpg" alt="img" class="rounded-circle" md-3 style="width: 100px;height: 100px;">
             </div>
