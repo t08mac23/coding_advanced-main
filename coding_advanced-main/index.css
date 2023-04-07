@@ -37,8 +37,6 @@
 
 /* メイン */
 .body {
-  width: auto;
-  height: auto;
   background-color: #FFEFD5;
 }
 
@@ -61,6 +59,27 @@
   margin: 15px 0px;
 }
 
+.signature {
+  font-size: 30px;
+  font-weight: bold;
+  margin:100px 15px 15px auto ;
+}
+
+.mid-body {
+  display: flex;
+  justify-content: space-around;
+}
+
+.picture {
+  margin-bottom: 100px;
+  height:  80%;
+  width: 100%;
+}
+
+.intro {
+  font-size: 20px;
+}
+
 /* フッター */
 .footer {
   display: flex;
@@ -74,3 +93,29 @@
 .footer1 {
   margin: 10px;
 }
+
+/* Bootstrap */
+.container { 
+  padding-right: 15px; 
+  padding-left: 15px; 
+  margin-right: auto; 
+  margin-left: auto; 
+} 
+
+@media (min-width: 768px) { 
+  .container { 
+      width: 750px; 
+      } 
+  } 
+
+@media (min-width: 992px) { 
+  .container { 
+      width: 970px; 
+      } 
+  } 
+
+@media (min-width: 1200px) { 
+  .container { 
+      width: 1170px; 
+      } 
+  }

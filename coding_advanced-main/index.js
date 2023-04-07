@@ -25,6 +25,5 @@ $(function () {
     $('.detail').not($('.'+$(this).attr('id'))).hide();
     // クリックした要素の ID と同じクラスのセクションを表示
     $('.'+$(this).attr('id')).toggle();
-    // $('.detail').toggle();
   });
 });
