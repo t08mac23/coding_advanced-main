@@ -20,5 +20,15 @@ const swiper = new Swiper(".swiper", {
 
 // メイン
 $(function () {
-  $('#body').fadeIn(3000)
+  $(window).scroll(function () {
+    const windowHeight = $(window).height();
+    const scroll = $(window).scrollTop();
+
+    $('.body2').each(function () {
+      const targetPosition = $(this).offset().top;
+      if (scroll > targetPosition - windowHeight + 100) {
+        $(this).addClass("is-fadein")
+      }
+    });
+  });
 });

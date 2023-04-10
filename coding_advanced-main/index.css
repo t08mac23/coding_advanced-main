@@ -79,6 +79,20 @@
   margin: 15px 0px;
 }
 
+
+.body2 {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(30px);
+  transition: opacity 1s, visibility 1s, transform 1s;
+}
+/* フェードイン時に入るクラス */
+.is-fadein {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
 .signature {
   font-size: 30px;
   font-weight: bold;
@@ -94,6 +108,12 @@
   margin-bottom: 100px;
   height:  80%;
   width: 100%;
+}
+
+.barista {
+  height:  100%;
+  width: 100%;
+
 }
 
 .intro {
@@ -127,7 +147,9 @@
 
 .img-hidden {
   display: flex;
+  flex-flow: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 .rounded-circle {
