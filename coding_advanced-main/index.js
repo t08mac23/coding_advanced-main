@@ -19,6 +19,12 @@ const swiper = new Swiper(".swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
+  },
+  // スクロールバー
+  scrollbar: {
+		el: '.swiper-scrollbar',
+		hide: false,
+		draggable: true
   }
 });
 
@@ -50,5 +56,6 @@ $(window).on('load resize', function () {
   const wid = $(window).width();
   if (576 >= wid) {
     $('.bottom').hide();
+    $('.body1').addClass("adjustment");
   };
 });

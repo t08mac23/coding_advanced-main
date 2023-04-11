@@ -50,38 +50,41 @@
       </nav>
     </header>
 
-    <!-- スライダーのコンテナ -->
-    <div class="swiper swiper-container">
-      <!-- 必要に応じたwrapper -->
-      <div class="swiper-wrapper">
-      <!-- スライド -->
-        <div class="swiper-slide slider">
-          <img class="images" src="../coding_advanced-main/img/interior.jpg">
+    <!-- メイン -->
+    <div class="body1">
+      <!-- スライダーのコンテナ -->
+      <div class="container-wrap">
+        <div class="swiper swiper-container">
+          <!-- 必要に応じたwrapper -->
+          <div class="swiper-wrapper">
+            <!-- スライド -->
+            <div class="swiper-slide slider">
+              <img class="images" src="../coding_advanced-main/img/interior.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img class="images" src="../coding_advanced-main/img/restaurant.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img class="images" src="../coding_advanced-main/img/food.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img class="images" src="../coding_advanced-main/img/food2.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img class="images" src="../coding_advanced-main/img/food4.jpg">
+            </div>
+          </div>
+          <!-- ページネーション -->
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-slide">
-          <img class="images" src="../coding_advanced-main/img/restaurant.jpg">
-        </div>
-        <div class="swiper-slide">
-          <img class="images" src="../coding_advanced-main/img/food.jpg">
-        </div>
-        <div class="swiper-slide">
-          <img class="images" src="../coding_advanced-main/img/food2.jpg">
-        </div>
-        <div class="swiper-slide">
-          <img class="images" src="../coding_advanced-main/img/food4.jpg">
-        </div>
-      </div>
-      <!-- ページネーション -->
-        <div class="swiper-pagination"></div>
-      <!-- ナビボタン -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <!--  スクロールバー -->
         <div class="swiper-scrollbar"></div>
       </div>
-    </div>
+      <!-- ナビボタン -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      
 
-    <!-- メイン -->
-    <div class="body">
       <div class="top">
         <div class="info">新型コロナウイルスに対する取り組みの最新情報をご案内
           <div class="accordion" id="accordionExample">
@@ -133,7 +136,6 @@
             </div>
           </div>
         </div>
-
       </div>
       <div class="middle">
         <div class="container">
@@ -177,10 +179,12 @@
         </div>
         <div class="container">
           <div class="row row-back body2">
-            <div class="col-md-6 intro intro-color">
-              <p><h1 class="time-place">Address</h1>688 xxx Drive, xxxx xxx #01 - 06 000000 Opening Hours
-              <h1 class="time-place">Mondays - Friday: 10am - 9pm</h1>Saturday, Sunday & Public Holidays: 9am- 9pm
-              </p>
+            <div class="col-md-6 intro">
+              <h1 class="time-place">Address</h1>
+              <p class="intro-color">688 xxx Drive, xxxx xxx #01 - 06 000000</p> 
+              <p class="intro-color">Opening Hours</p>
+              <h1 class="time-place">Mondays - Friday: 10am - 9pm</h1>
+              <p class="intro-color">Saturday, Sunday & Public Holidays: 9am- 9pm</p>
             </div>
             <div class="col-md-6">
               <img src="../coding_advanced-main/img/barista.jpg" alt="img" class="img-fluied picture">
@@ -213,13 +217,14 @@
           </div>
         </div>
       </div>
-      <!-- フッター -->
-      <footer class="footer">
-        <div class="footer1">プライバシーポリシー</div>
-        <div class="footer1">お問合せ</div>
-        <div class="footer1">運営会社</div>
-      </footer>
     </div>
+
+    <!-- フッター -->
+    <footer class="footer">
+      <div class="footer1">プライバシーポリシー</div>
+      <div class="footer1">お問合せ</div>
+      <div class="footer1">運営会社</div>
+    </footer>
  
     <!-- Optional JavaScript -->
     <!-- jQuery firstly, Popper.js,  Bootstrap JS, and, finally, js_file -->
