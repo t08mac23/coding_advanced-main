@@ -6,6 +6,11 @@
   background-color: lightgray;
 }
 
+.navbar-toggler1 {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header-row {
   display: flex;
   align-items: center;
@@ -15,13 +20,18 @@
   font-weight: bold;
   font-size: 30px;
 }
+
+.inquire {
+  writing-mode: horizontal-tb;
+  display: flex;
+}
+
 .search-form {
   display: flex;
 }
 
-.border {
-  outline: none; 
-  border: none;
+.btn-outline {
+  background-color: #f8f9fa;
 }
 
 /* .swiper */
@@ -39,9 +49,14 @@
   line-height: 300px;
 }
 
-.images {
-  width: 50vw;
-  height: 75vh;
+.swiper-container,
+.swiper-slide {
+   height: 100vh;
+}
+.swiper-slide > img {
+   object-fit: cover; /* IE: not support */
+   width: 100%;
+   height: 100%;
 }
 
 /* メイン */
@@ -77,6 +92,23 @@
 .detail {
   font-size: 20px;
   margin: 15px 0px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+}
+.accordion-button::after {
+  flex-shrink: 0;
+  content: "";
+  background-image: none;
+  background-repeat: no-repeat;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
 }
 
 
@@ -160,6 +192,8 @@
 .place {
   margin-bottom: 20px;
 }
+
+/* /メイン */
 
 /* フッター */
 .footer {

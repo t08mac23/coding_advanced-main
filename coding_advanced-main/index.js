@@ -1,5 +1,10 @@
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 2,
+  slidesPerView: 1,
+  breakpoints: {
+    576: {
+      slidesPerView: 2
+    }
+  },
   // ページネーション
   pagination: {
     el: ".swiper-pagination",
@@ -15,7 +20,14 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
   }
-  // スクロールバー
+});
+
+// メイン上部
+
+$(function () {
+  $('.accordion-button').on('click', function () {
+    $(this).addClass('collapsed')
+  });
 });
 
 // メイン
@@ -31,4 +43,12 @@ $(function () {
       }
     });
   });
+});
+
+// 店舗一覧の非表示（sp）
+$(window).on('load resize', function () {
+  const wid = $(window).width();
+  if (576 >= wid) {
+    $('.bottom').hide();
+  };
 });

@@ -20,25 +20,38 @@
   <body>
   <!-- ここにメインの処理を書く -->
     <header class="header">
-      <div class="container">
-        <div class="row header-row">
-          <div class="col-md-5 col-sm-5 casteria">Casteria</div>
-          <div class="col-md-1 col-sm-1">Home</div>
-          <div class="col-md-1 col-sm-1">Food</div>
-          <div class="col-md-1 col-sm-1">Drink</div>
-          <div class="col-md-1 col-sm-1">お問合せ</div>
-          <div class="col-md-2 col-sm-1">
-            <form class="search-form">
-              <input class='border rounded' placeholder='Search'>
-              <button class="border rounded">Search</button>
-            </form>
+      <nav class="navbar navbar-expand-lg navbar-light container header">
+        <div class="container-fluid header-row navbar-togger1">
+          <a class="navbar-brand casteria col-md-5" href="#">Casteria</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 header-row">
+              <li class="nav-item">
+                <a class="nav-link active col-md-1" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Food</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Drink</a>
+              </li>
+              <li class="nav-item inquire">
+                <p class="nav-link" href="#">お問合せ</p>
+              </li>
+              <form class="d-flex search-form">
+                <input class="form-control col-md-1" type="search" placeholder="Search" aria-label="Search" style="border: none;">
+                <button class="btn btn-outline" type="submit">Search</button>
+              </form>
+            </ul>
           </div>
         </div>
-      </div>
+      </nav>
     </header>
 
     <!-- スライダーのコンテナ -->
-    <div class="swiper">
+    <div class="swiper swiper-container">
       <!-- 必要に応じたwrapper -->
       <div class="swiper-wrapper">
       <!-- スライド -->
@@ -63,6 +76,7 @@
       <!-- ナビボタン -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
       </div>
     </div>
 
@@ -73,11 +87,11 @@
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button information" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="accordion-button collapsed information" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                   ■衛生面に関して
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <p>・マスクを着用して接客</p>
                   <p>・出勤前の検温の徹底</p>
@@ -161,8 +175,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="bottom">
         <div class="container">
           <div class="row row-back body2">
             <div class="col-md-6 intro intro-color">
@@ -175,11 +187,13 @@
             </div>
           </div>
         </div>
-        <div class="restaurants body2">
+      </div>
+      <div class="bottom">
+        <div class="restaurants body2 sp-hide">
           <h1>店舗一覧</h1>
         </div>
         <div class="container container-m">
-          <div class="row body2">
+          <div class="row body2 sp-hide">
             <div class="col-md-3 img-hidden" md-3 style="width: 25%;height: 25%;">
               <img src="../coding_advanced-main/img/restaurant2.jpg" alt="img" class="rounded-circle" md-3 style="width: 200px;height: 200px;">
               <div class="place">📍東京都渋谷区xxxxxx xxxxx</div>
