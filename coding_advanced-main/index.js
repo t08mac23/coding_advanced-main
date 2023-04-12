@@ -51,6 +51,15 @@ $(function () {
   });
 });
 
+
+$(window).on('load resize', function () {
+  const wid = $(window).width();
+  if (wid >= 576) {
+    $('.swiper-container .swiper-button-prev').css('left', '+=40');
+    $('.swiper-container .swiper-button-next').css('right', '+=40');
+  };
+});
+
 // 店舗一覧の非表示（sp）
 $(window).on('load resize', function () {
   const wid = $(window).width();
